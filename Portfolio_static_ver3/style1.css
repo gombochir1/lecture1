@@ -1,0 +1,171 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+header{
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav img{
+	height: 50px;
+	width: 50px;
+	margin-left: 50px;
+	margin-top: 13px;
+	padding-bottom: 13px;
+}
+
+.option{
+	display: flex;
+	margin: 0 35px;
+	font-size: 15px;
+	font-weight: bold;
+	align-items: center;
+}
+
+.option a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	margin: 0 13px;
+}
+
+.option a:hover{
+	background-color: #754EF9;
+	padding: 10px 8px;
+	border-radius: 15px;
+}
+
+.option button{
+	background-color: rgba(117,78,249,255);
+	border: 1.5px solid rgba(117,78,249,255);
+	border-radius: 10px;
+	color: white;
+	width: 150px;
+	height: 30px;
+	font-size: 15px;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.option button:hover{
+	opacity: 0.8;
+}
+
+.text{
+	padding-top: 70px;
+	width: 100%;
+	height: 77vh;
+	background-color: white;
+	display: flex;
+}
+
+.textbox1{
+	width: 35%;
+	height: 500px;
+	margin-left: 255px;
+	background-color: rgba(117,78,249,255);
+	color: white;
+	border-radius: 16px;
+	text-align: center;
+}
+
+.textbox1 p{
+	padding-top: 145px;
+	font-size: 20px;
+	line-height: 1.3;
+}
+
+.textbox2{
+	width: 27%;
+	height: 500px;
+	margin-left: 70px;
+	background-color: rgba(117,78,249,255);
+	color: white;
+	border-radius: 16px;
+	text-align: center;
+}
+
+.textbox2 p{
+	padding-top: 145px;
+	font-size: 20px;
+	line-height: 1.3;
+}
+
+.textbox2 ul li{
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.follow{
+	display: flex;
+	position: fixed;
+	top: 300px;
+	right: -80px;
+	transform: rotate(90deg);
+	color: rgb(102, 66, 245);
+}
+
+.follow ul li{
+	display: inline;
+	list-style: none;
+	margin: 0 10px;
+}
+
+.follow ul li img{
+	height: 20px;
+	width: 20px;
+}
+
+.skill{
+	height: 350px;
+	display: flex;
+	padding-left: 260px;
+	background-color: rgba(20,29,57,255);
+	padding-top: 60px;
+}
+
+.skillz{
+	width: 25%;
+	height: 230px;
+	background-color: beige;
+	margin-right: 35px;
+	background-color: rgba(117,78,249,255);
+	color: white;
+	border-radius: 16px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.skillz h4{
+	font-size: 30px;
+	line-height: 1.2;
+}
+
+.skillz .p1{
+	font-size: 20px;
+	line-height: 3;
+}
+
+skillz .p2{
+	font-size: 17px;
+}
+
+footer{
+	background-color: rgba(117,78,249,255);
+	width: 100%;
+	height: 20px;
+}
+
+footer p{
+	font-size: 16px;
+	text-align: center;
+	color: white;
+}
+
