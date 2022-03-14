@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ex1</title>
+
+</head>
+<body>
+	<p id="she"></p>
+	<button onclick="del()">Click here to see the length of an object</button>
+
+	<script type="text/javascript">
+		var student = {
+			name: "Emma",
+			sclass: "IV",
+			age: 18
+		};
+		document.getElementById("she").innerHTML = "Length of an object";
+
+		function del() {
+			var urt = Object.keys(student).length;
+			document.getElementById("she").innerHTML = urt;
+		}
+
+		
+	</script>
+
+</body>
+</html>
