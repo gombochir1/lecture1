@@ -1,5 +1,16 @@
+#all{
+	background: rgb(239,219,94);
+	background: radial-gradient(circle, rgba(239,219,94,1) 23%, rgba(246,238,227,1) 54%);
+}
+
+#nv a{
+	font-size: 33px;
+	font-family: 'Ms Madi', cursive;
+}
+
 #navmenu ul li a{
 	font-size: 20px;
+	font-family: 'Comfortaa', cursive;
 	color: black;
 }
 
@@ -33,6 +44,7 @@ footer{
 	#projects{
 		background-color: #F6EEE3;
 	}
+
 	#pro2{
 		text-align: center;
 	}

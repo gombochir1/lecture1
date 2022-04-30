@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Me</title>
+
+	<!-- Bootstrap connection -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Ms+Madi&display=swap" rel="stylesheet">
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+<body>
+	<div id="all">
+	<!-- Navbar -->
+	 <nav class="navbar navbar-expand-md navbar-light py-3" id="nv">
+      <div class="container">
+        <a href="#" class="navbar-brand">Gombochir</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto me-5">
+            <li class="nav-item mx-5">
+              <a href="#" class="nav-link" style="text-decoration: underline;">About</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a href="#" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main -->
+    <div id="main">
+    	<div class="container-fluid">
+    		<div id="about_im">
+    			<img id="j6" class="img-fluid mt-5 ms-5" style="border-radius: 50%;">
+    			<div class="" id="about_text">
+    				<h1 id="j1"></h1>
+    				<p class="mt-5" id="j2"></p>
+    				<div id="end">
+    					<a href="https://www.linkedin.com/in/gombo-ochir-ariunbold-58534a194/"><img id="j3" class="img-fluid"></a>
+						<a href="https://github.com/gombochir1"><img id="j4"  class="img-fluid"></a>
+						<a href="https://www.instagram.com/gombochirr/?hl=en"><img id="j5" class="img-fluid"></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    </div>
+
+    <!-- JSON -->
+
+    <script type="text/javascript">
+    	var data = [
+    	{
+    		"title": "Student. Developer.<br>The Kidult",
+    		"image2": "img/linkedin.svg",
+    		"image3": "img/github.svg",
+    		"image4": "img/instagram.svg",
+    		"self": "img/self.jpg",
+    		"paragraph": "Hi, I'm Gombo-Ochir Ariunbold, a Information Systems student at University of Finance and Economics of Mongolia. I like to solve data structures & algorithm problems and I also enjoy developing mobile applications and learning new things. I am planning to work as an  mobile developer after I finish my degree."
+    	}];
+
+    	jsoon();
+
+    	function jsoon(){
+    		var title = document.getElementById("j1");
+    		var para = document.getElementById("j2");
+    		var linkd = document.getElementById("j3");
+    		var githb = document.getElementById("j4");
+    		var ig = document.getElementById("j5");
+    		var self = document.getElementById("j6");
+
+    		title.innerHTML = data[0].title;
+    		para.innerHTML = data[0].paragraph;
+    		linkd.src = data[0].image2;
+    		githb.src = data[0].image3;
+    		ig.src = data[0].image4;
+    		self.src = data[0].self;
+    	
+    	}
+    </script>
+
+
+
+	<!-- JS for navbar -->
+	<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+</body>
+</html>
