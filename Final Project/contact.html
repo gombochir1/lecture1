@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+
+	<!--Boostrap Link-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<!-- Google Font -->
+	<link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-host-cloud.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .center {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 30px auto;
+        border: 1px solid gray;
+      }
+    
+        @media screen and (max-width: 1000px) {
+          .functional-buttons {
+         visibility: hidden;
+         }
+
+      }
+    </style>
+
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: black; height:15vh;">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>ATMA</h2></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="functional-buttons">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="bi bi-list" style="font-size: 30px"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Sign-In</a>
+                <a class="dropdown-item" href="#">Sign Up</a>
+                <a class="dropdown-item" href="#">Log-Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+	<div class="container-lg">
+		<div class="row">
+			<div class="col-8" id="headers">
+				<h1>NEWBIZ@ATMA.COM</h1>
+				<h1>+419823467290000</h1>
+			</div>
+		</div>
+		
+		<div class="container">
+		<div id="location">
+			<h3>300 Park Ave S, USA</h3>
+			<a href="https://goo.gl/maps/3PEHJANfgTQby5W18">See on the map</a>
+		</div>
+
+		<div class="row" id="fro">
+			<div class="col-lg-6">
+				<div id="inputs">
+					<div class="row">
+						<div class="col-sm-6" style="margin-top: 10px;">
+							<input type="text" id="name" placeholder="Name">
+						</div>
+
+						<div class="col-sm-6" style="margin-top: 10px;">
+							<input type="text" id="phone" placeholder="Phone Number">
+						</div>
+					</div>
+
+					<div class="row" id="hoho">
+						<div class="col-sm-6" style="margin-top: 10px;">
+							<input type="text" id="email" placeholder="Email">
+						</div>
+
+						<div class="col-sm-6" style="margin-top: 10px;">
+							<input type="text" id="wish" placeholder="What are you looking for?">
+						</div>
+					</div>
+				</div>
+				
+
+				<div class="row" id="input_message">
+					<input type="text" id="message" placeholder="Message">
+				</div>
+
+				<div id="subm">
+					<button onclick="return validateForm();">Submit</button>
+					<img src="img/send.png">
+				</div>
+
+				<div id="follow">
+					<p>Follow us</p>
+					<a href="facebook.com">Facebook</a>
+					<a href="instagram.com">Instagram</a>
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language="text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; 
+      function clearField(t) {
+        if (!cleared[t.id]) {
+          cleared[t.id] = 1;
+          t.value = '';
+          t.style.color = '#fff';
+        }
+      }
+    </script>
+
+
+	<script type="text/javascript">
+		function validateForm() {
+        if (document.getElementById("name").value == "") {
+        alert("Name must be filled out");
+        return false;
+        }
+
+        if (document.getElementById("phone").value == "") {
+        alert("Phone must be filled out");
+        return false;
+        }
+
+        if (document.getElementById("email").value == "") {
+        alert("Email must be filled out");
+        return false;
+        }
+
+        if (document.getElementById("wish").value == "") {
+        alert("Your intention must be filled out");
+        return false;
+        }
+
+        if (document.getElementById("message").value == "") {
+        alert("Message must be filled out");
+        return false;
+        }
+
+        alert("Mail sent succesfully!");
+        }
+	</script>
+
+
+
+</body>
+</html>
