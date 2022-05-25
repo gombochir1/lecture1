@@ -1,0 +1,17 @@
+#end{
+	background-color: black;
+	height: 60vh;
+	margin-top: 150px;
+}
+
+#view{
+		margin-top: 50px;
+	}
+
+#view button{
+		border-radius: 50%;
+		height: 20vh;
+		width: 270px;
+		background: white;
+		color: black;
+}
